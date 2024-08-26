@@ -471,6 +471,7 @@
     flex-wrap: wrap;
     background-color: rgba(0,0,0,0.5);
     /* height: 100vh; */
+    /* background: url(images/stars.jpg); */
     
 }
 .information .flexcard{
@@ -537,16 +538,25 @@
     filter: drop-shadow(8px 8px 8px rgb(164, 15, 223)) ;
 }
 
+.iconstech i{
+    font-size: 130px;
+    margin-left: 20px;
+}
+
+
 @media(max-width:768px){
     .information{
         flex-direction: column;
         justify-content: center;
-        text-align: center;
+        /* text-align: center; */
         align-items: center;
     }
-    .iconstech{
+    .information h2{
+        text-align: center;
+    }
+    .iconstech i{
         gap: 20px;
-        font-size: 90px;
+        font-size: 80px;
     }
     /* .information .flexcard{
         flex-wrap: wrap;
@@ -571,8 +581,9 @@
         width: 130px;
         margin: 10px;
     }
-    .iconstech{
+    .iconstech i{
         gap: 10px;
+        font-size: 50px;
     }
     .technology{
         padding: 5px;
