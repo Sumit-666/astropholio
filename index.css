@@ -500,7 +500,7 @@
 }
  .flexcard .textarea{
     padding: 20px;
-    opacity: 0.6;;
+    opacity: 1;
  }
  .flexcard:hover{
     background: transparent;
@@ -636,10 +636,14 @@
 }
 .projectcard{
     display: flex;
+    /* flex-direction: row; */
+    /* background-color: aquamarine; */
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    box-sizing: border-box;
+    /* background-color: rgba(0,0,0,0.5); */
+    /* height: 100vh; */
+    background: url(images/stars.jpg);
 }
 .projectcard .cardy{
     background: url(images/star1.jpeg);
@@ -650,9 +654,11 @@
     border: 2px solid rgb(74 80 169);
     overflow: hidden;
     box-shadow: 0 10px 10px rgb(67 72 148);
-    flex-wrap: wrap;
     flex: 1 1 auto;
     flex-shrink: 1;
+    display: flex;
+    color: white;
+
 }
 
 @media(max-width:768px){
