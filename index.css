@@ -455,11 +455,12 @@
 /* <<----------ABOUT----------->> */
 
 .aboutme{
-    background: url(images/stars.jpg);
+    /* background: url(images/star1.jpeg); */
+       background: url(images/stars.jpg);
     /* z-index: 2; */
     background-size: cover;
     background-repeat: no-repeat;
-    /* opacity: 0; */
+    opacity: 100%;
     font-family: 'karla';
 }
 .information{
@@ -469,11 +470,20 @@
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    background-color: rgba(0,0,0,0.5);
+    /* background-color: rgba(0,0,0,0.5); */
     /* height: 100vh; */
-    /* background: url(images/stars.jpg); */
+    background: url(images/stars.jpg);
     
 }
+.myinfo-container h1{
+    font-size: 50px;
+    /* margin-top: 50px; */
+    text-align: center;
+    color: white;
+    padding: 30px;
+    text-decoration: underline;
+}
+
 .information .flexcard{
     border: 2px solid #580fdb;
     display: flex;
@@ -506,7 +516,7 @@
 .technology{
     margin-top: 20px;
     display: flex;
-    border: 2px solid black;
+    /* border: 2px solid ; */
     /* flex-direction: column; */
     align-items: center;
     flex-wrap: wrap;
@@ -520,6 +530,8 @@
 .technology h1{
     margin: 0;
     color: white;
+    /* text-align: center; */
+    /* text-wrap: wrap; */
 }
 .technology i{
     margin-top: 20px;
@@ -551,6 +563,9 @@
         /* text-align: center; */
         align-items: center;
     }
+    .myinfo-container h1{
+        font-size: 30px;
+    }
     .information h2{
         text-align: center;
     }
@@ -578,8 +593,15 @@
 @media (max-width:370px){
     .information .flexcard{
         height:130px;
-        width: 130px;
+        width: 176px;
         margin: 10px;
+        font-size: 8px;
+    }
+    .textarea h2{
+        font-size: 16px;
+    }
+    .textarea h3{
+        font-size: 11px;
     }
     .iconstech i{
         gap: 10px;
@@ -592,5 +614,61 @@
     .technology h1{
         font-size: 20px;
         text-decoration: underline;
+    }
+}
+
+.project-container{
+    background: url(images/stars.jpg);
+    height: fit-content;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.project-container h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding: 30px;
+    text-decoration: underline;
+    /* margin-top: 50px; */
+    overflow: hidden;
+}
+.projectcard{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.projectcard .cardy{
+    background: url(images/star1.jpeg);
+    /* background-color: #4CAF50; */
+    height: 300px;
+    width: 300px;
+    margin: 30px 30px;
+    border: 2px solid rgb(74 80 169);
+    overflow: hidden;
+    box-shadow: 0 10px 10px rgb(67 72 148);
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    flex-shrink: 1;
+}
+
+@media(max-width:768px){
+    .project-container h1{
+        font-size: 30px;
+    }
+    .projectcard{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width:370px){
+    .projectcard .cardy{
+        height:130px;
+        width: 170px;
+        margin: 10px;
     }
 }
