@@ -508,10 +508,19 @@
  .textarea h2{
     text-decoration: underline;
     font-size: 25px;
+    margin-top: -8px;
  }
  .textarea h3{
     font-size: 18px;
  }
+.textarea .exp p{
+    margin-bottom: 0;
+}
+@media(max-width:1445px){
+    .flexcard{
+        height: 350px;
+    }
+}
 
 .technology{
     margin-top: 20px;
@@ -569,6 +578,9 @@
     .information h2{
         text-align: center;
     }
+    .information .flexcard{
+        height: fit-content;
+    }
     .iconstech i{
         gap: 20px;
         font-size: 80px;
@@ -592,7 +604,7 @@
 }
 @media (max-width:370px){
     .information .flexcard{
-        height:130px;
+        height:fit-content;
         width: 176px;
         margin: 10px;
         font-size: 8px;
