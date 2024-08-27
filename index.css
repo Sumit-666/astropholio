@@ -489,7 +489,7 @@
     display: flex;
     color: white;
     /* width: fit-content; */
-    height: 300px;
+    height: 410px;
     width: 300px;
     background:url(images/sky.jpeg);
     margin: 30px 30px;
@@ -498,6 +498,10 @@
     box-shadow: 0px 10px 10px #1eb2fc;
     flex-shrink: 1;
 }
+#education li:nth-child(5){
+    margin-bottom: 20px;
+}
+
  .flexcard .textarea{
     padding: 20px;
     opacity: 1;
