@@ -653,12 +653,14 @@
     margin: 30px 30px;
     border: 2px solid rgb(74 80 169);
     overflow: hidden;
-    box-shadow: 0 10px 10px rgb(67 72 148);
     flex: 1 1 auto;
     flex-shrink: 1;
     display: flex;
     color: white;
 
+}
+.cardy:hover{
+    box-shadow: 0 10px 10px rgb(67 72 148);
 }
 
 @media(max-width:768px){
@@ -682,6 +684,7 @@
     display: flex;
     flex-direction: column;
     background: url(images/star1.jpeg);
+    border-radius: 8px;
 }
 .cardy img{
     background-size: contain;
@@ -691,6 +694,7 @@
     height: 220px;
     border-bottom: 2px solid black;
     filter: opacity(0.8);
+    border-radius: 8px;
 }
 
 .cardy h2{
@@ -703,7 +707,7 @@
     font-size: 15px;
 }
 .cardy:hover h2{
-    color: #1aff11;
+    color: #07c0f8;
     letter-spacing: 1px;
 }
 .cardy:hover p{
