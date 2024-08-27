@@ -515,6 +515,7 @@
  }
 .textarea .exp p{
     margin-bottom: 0;
+    margin-top: -6px;
 }
 @media(max-width:1445px){
     .flexcard{
