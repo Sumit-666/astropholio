@@ -725,11 +725,11 @@
 }
 .cardy:hover h2{
     color: #07c0f8;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
 }
 .cardy:hover p{
     color: #1aff11;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.6px;
 }
 .cardy:hover img{
     filter: opacity(1);
